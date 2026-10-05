@@ -1,3 +1,7 @@
+import os
+
+os.environ.setdefault("TELEMETRY_EXPORTER", "none")
+
 import pytest
 from fastapi.testclient import TestClient
 

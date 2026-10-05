@@ -1,0 +1,65 @@
+# Grafana-managed alert: fire when Order Tracker returns any 5xx response.
+# Templates use .Labels / .Values (instead of $labels / $values) so the "$"
+# is never mistaken for an environment variable by Grafana's file provisioning.
+apiVersion: 1
+
+groups:
+  - orgId: 1
+    name: order-tracker-errors
+    folder: Order Tracker Alerts
+    interval: 10s                      # evaluate every 10 seconds
+    rules:
+      - uid: order-tracker-5xx
+        title: Order Tracker 5xx responses
+        condition: C
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 300
+              to: 0
+            datasourceUid: prometheus
+            model:
+              refId: A
+              # One series per endpoint, so the alert carries the endpoint as a label.
+              # increase() alone returns 0 for the very first 5xx (a brand-new counter
+              # series has no earlier sample), so we also count 5xx series that did not
+              # exist 5 minutes ago. Result: a single 5xx is enough to fire.
+              expr: |
+                sum by (http_method, http_route) (
+                  (increase(order_tracker_requests_total{http_status_code=~"5.."}[5m]) > 0)
+                  or
+                  (order_tracker_requests_total{http_status_code=~"5.."}
+                    unless order_tracker_requests_total{http_status_code=~"5.."} offset 5m)
+                )
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: C
+            datasourceUid: __expr__
+            model:
+              refId: C
+              type: threshold
+              expression: A
+              conditions:
+                - evaluator:
+                    type: gt
+                    params: [0]
+        # No 5xx responses at all means the query returns no series:
+        # that is the healthy case, so treat "no data" as Normal (OK).
+        noDataState: OK
+        execErrState: Error
+        for: 0s
+        labels:
+          severity: critical
+          service: order-tracker
+          team: orders
+        annotations:
+          summary: 'Order Tracker returned 5xx responses on {{ index .Labels "http_method" }} {{ index .Labels "http_route" }}'
+          description: 'About {{ index .Values "A" }} server errors (HTTP 5xx) on endpoint {{ index .Labels "http_method" }} {{ index .Labels "http_route" }} in the last 5 minutes.'
+          endpoint: '{{ index .Labels "http_method" }} {{ index .Labels "http_route" }}'
+          time_window: 5m
+          dashboard_url: http://localhost:3000/d/order-tracker/order-tracker?orgId=1&from=now-30m&to=now
+          runbook: Check the 5xx panel, open the error logs in Loki, follow trace_id to Tempo, reproduce, fix, test, redeploy.
+          __dashboardUid__: order-tracker
+          __panelId__: "5"
+        isPaused: false

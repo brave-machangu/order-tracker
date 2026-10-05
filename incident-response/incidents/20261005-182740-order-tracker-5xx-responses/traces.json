@@ -1,0 +1,463 @@
+{
+  "search": {
+    "traces": [
+      {
+        "traceID": "65d51d527e694e0628167870f1ace7df",
+        "rootServiceName": "order-tracker",
+        "rootTraceName": "GET /api/orders/{order_id}",
+        "startTimeUnixNano": "1791224835504511671",
+        "durationMs": 7,
+        "spanSet": {
+          "spans": [
+            {
+              "spanID": "a0014c56462ad518",
+              "startTimeUnixNano": "1791224835505719631",
+              "durationNanos": "2415815",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "0711c88abfe6fa95",
+              "startTimeUnixNano": "1791224835511726786",
+              "durationNanos": "27896",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "16212d313e90293e",
+              "startTimeUnixNano": "1791224835504511671",
+              "durationNanos": "7820584",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 3
+        },
+        "spanSets": [
+          {
+            "spans": [
+              {
+                "spanID": "a0014c56462ad518",
+                "startTimeUnixNano": "1791224835505719631",
+                "durationNanos": "2415815",
+                "attributes": [
+                  {
+                    "key": "service.name",
+                    "value": {
+                      "stringValue": "order-tracker"
+                    }
+                  },
+                  {
+                    "key": "status",
+                    "value": {
+                      "stringValue": "error"
+                    }
+                  }
+                ]
+              },
+              {
+                "spanID": "0711c88abfe6fa95",
+                "startTimeUnixNano": "1791224835511726786",
+                "durationNanos": "27896",
+                "attributes": [
+                  {
+                    "key": "service.name",
+                    "value": {
+                      "stringValue": "order-tracker"
+                    }
+                  },
+                  {
+                    "key": "status",
+                    "value": {
+                      "stringValue": "error"
+                    }
+                  }
+                ]
+              },
+              {
+                "spanID": "16212d313e90293e",
+                "startTimeUnixNano": "1791224835504511671",
+                "durationNanos": "7820584",
+                "attributes": [
+                  {
+                    "key": "service.name",
+                    "value": {
+                      "stringValue": "order-tracker"
+                    }
+                  },
+                  {
+                    "key": "status",
+                    "value": {
+                      "stringValue": "error"
+                    }
+                  }
+                ]
+              }
+            ],
+            "matched": 3
+          }
+        ],
+        "serviceStats": {
+          "order-tracker": {
+            "spanCount": 4,
+            "errorCount": 3
+          }
+        }
+      },
+      {
+        "traceID": "73455354a03b81d9e9bbf445c34ccb05",
+        "rootServiceName": "order-tracker",
+        "rootTraceName": "GET /api/orders/{order_id}",
+        "startTimeUnixNano": "1791224729304201996",
+        "durationMs": 2,
+        "spanSet": {
+          "spans": [
+            {
+              "spanID": "16eab44432e8bd4b",
+              "startTimeUnixNano": "1791224729305093579",
+              "durationNanos": "1037720",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 1
+        },
+        "spanSets": [
+          {
+            "spans": [
+              {
+                "spanID": "16eab44432e8bd4b",
+                "startTimeUnixNano": "1791224729305093579",
+                "durationNanos": "1037720",
+                "attributes": [
+                  {
+                    "key": "service.name",
+                    "value": {
+                      "stringValue": "order-tracker"
+                    }
+                  },
+                  {
+                    "key": "status",
+                    "value": {
+                      "stringValue": "error"
+                    }
+                  }
+                ]
+              }
+            ],
+            "matched": 1
+          }
+        ],
+        "serviceStats": {
+          "order-tracker": {
+            "spanCount": 5,
+            "errorCount": 1
+          }
+        }
+      },
+      {
+        "traceID": "3e88d627a111dc814c7524eabd84cc51",
+        "rootServiceName": "order-tracker",
+        "rootTraceName": "GET /api/orders/{order_id}",
+        "startTimeUnixNano": "1791224590931228185",
+        "durationMs": 6,
+        "spanSet": {
+          "spans": [
+            {
+              "spanID": "418ad602904f3597",
+              "startTimeUnixNano": "1791224590933318994",
+              "durationNanos": "2257936",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 1
+        },
+        "spanSets": [
+          {
+            "spans": [
+              {
+                "spanID": "418ad602904f3597",
+                "startTimeUnixNano": "1791224590933318994",
+                "durationNanos": "2257936",
+                "attributes": [
+                  {
+                    "key": "service.name",
+                    "value": {
+                      "stringValue": "order-tracker"
+                    }
+                  },
+                  {
+                    "key": "status",
+                    "value": {
+                      "stringValue": "error"
+                    }
+                  }
+                ]
+              }
+            ],
+            "matched": 1
+          }
+        ],
+        "serviceStats": {
+          "order-tracker": {
+            "spanCount": 5,
+            "errorCount": 1
+          }
+        }
+      }
+    ],
+    "metrics": {
+      "inspectedBytes": "56252",
+      "completedJobs": 1,
+      "totalJobs": 1
+    }
+  },
+  "error_traces": [
+    {
+      "trace_id": "65d51d527e694e0628167870f1ace7df",
+      "spans": [
+        {
+          "name": "order.lookup",
+          "status": {
+            "message": "ValueError: day is out of range for month",
+            "code": "STATUS_CODE_ERROR"
+          },
+          "attributes": {
+            "order.id": "express-1002",
+            "order.priority": "express"
+          },
+          "exceptions": [
+            {
+              "type": "ValueError",
+              "message": "day is out of range for month",
+              "stacktrace": "Traceback (most recent call last):\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 602, in use_span\n    yield span\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1136, in start_as_current_span\n    yield span\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 441, in start_as_current_span\n    yield span\n  File \"/app/app/main.py\", line 119, in get_order\n    order = order_detail(row)\n            ^^^^^^^^^^^^^^^^^\n  File \"/app/app/main.py\", line 60, in order_detail\n    estimated_at = placed_at.replace(day=placed_at.day + 2)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: day is out of range for month\n"
+            }
+          ]
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {
+            "code": "STATUS_CODE_ERROR"
+          },
+          "attributes": {
+            "http.status_code": "500"
+          },
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {},
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id}",
+          "status": {
+            "code": "STATUS_CODE_ERROR"
+          },
+          "attributes": {
+            "http.scheme": "http",
+            "http.host": "10.215.24.7:8000",
+            "http.flavor": "1.1",
+            "http.target": "/api/orders/express-1002",
+            "http.server_name": "localhost:8000",
+            "http.user_agent": "curl/8.21.0",
+            "http.route": "/api/orders/{order_id}",
+            "http.method": "GET",
+            "http.url": "http://localhost:8000/api/orders/express-1002",
+            "http.status_code": "500"
+          },
+          "exceptions": [
+            {
+              "type": "ValueError",
+              "message": "day is out of range for month",
+              "stacktrace": "Traceback (most recent call last):\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/instrumentation/fastapi/__init__.py\", line 360, in __call__\n    await self.app(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/middleware/base.py\", line 193, in __call__\n    response = await self.dispatch_func(request, call_next)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/app/telemetry.py\", line 149, in record_request_metrics\n    response = await call_next(request)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/middleware/base.py\", line 168, in call_next\n    raise app_exc from app_exc.__cause__ or app_exc.__context__\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/middleware/base.py\", line 144, in coro\n    await self.app(scope, receive_or_disconnect, send_no_error)\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py\", line 63, in __call__\n    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py\", line 53, in wrapped_app\n    raise exc\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py\", line 42, in wrapped_app\n    await app(scope, receive, sender)\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py\", line 18, in __call__\n    await self.app(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/routing.py\", line 670, in __call__\n    await self.middleware_stack(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/routing.py\", line 2734, in app\n    await route.handle(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/routing.py\", line 1281, in handle\n    await super().handle(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/routing.py\", line 280, in handle\n    await self.app(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/routing.py\", line 158, in app\n    await wrap_app_handling_exceptions(app, request)(scope, receive, send)\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py\", line 53, in wrapped_app\n    raise exc\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py\", line 42, in wrapped_app\n    await app(scope, receive, sender)\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/routing.py\", line 144, in app\n    response = await f(request)\n               ^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/routing.py\", line 706, in app\n    raw_response = await run_endpoint_function(\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/fastapi/routing.py\", line 354, in run_endpoint_function\n    return await run_in_threadpool(dependant.call, **values)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/starlette/concurrency.py\", line 34, in run_in_threadpool\n    return await anyio.to_thread.run_sync(func)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/anyio/to_thread.py\", line 65, in run_sync\n    return await get_async_backend().run_sync_in_worker_thread(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py\", line 2706, in run_sync_in_worker_thread\n    return await future\n           ^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py\", line 1100, in run\n    result = context.run(func, *args)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/app/main.py\", line 119, in get_order\n    order = order_detail(row)\n            ^^^^^^^^^^^^^^^^^\n  File \"/app/app/main.py\", line 60, in order_detail\n    estimated_at = placed_at.replace(day=placed_at.day + 2)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: day is out of range for month\n"
+            }
+          ]
+        }
+      ],
+      "http_target": "/api/orders/express-1002"
+    },
+    {
+      "trace_id": "73455354a03b81d9e9bbf445c34ccb05",
+      "spans": [
+        {
+          "name": "order.lookup",
+          "status": {
+            "message": "HTTPException: 404: Order not found",
+            "code": "STATUS_CODE_ERROR"
+          },
+          "attributes": {
+            "order.id": "standard-1002"
+          },
+          "exceptions": [
+            {
+              "type": "fastapi.exceptions.HTTPException",
+              "message": "404: Order not found",
+              "stacktrace": "Traceback (most recent call last):\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 602, in use_span\n    yield span\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1136, in start_as_current_span\n    yield span\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 441, in start_as_current_span\n    yield span\n  File \"/app/app/main.py\", line 116, in get_order\n    raise HTTPException(404, \"Order not found\")\nfastapi.exceptions.HTTPException: 404: Order not found\n"
+            }
+          ]
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {
+            "http.status_code": "404"
+          },
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {},
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {},
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id}",
+          "status": {},
+          "attributes": {
+            "http.scheme": "http",
+            "http.host": "10.215.24.7:8000",
+            "http.flavor": "1.1",
+            "http.target": "/api/orders/standard-1002",
+            "http.server_name": "localhost:8000",
+            "http.user_agent": "curl/8.21.0",
+            "http.route": "/api/orders/{order_id}",
+            "http.method": "GET",
+            "http.url": "http://localhost:8000/api/orders/standard-1002",
+            "http.status_code": "404"
+          },
+          "exceptions": []
+        }
+      ],
+      "http_target": "/api/orders/standard-1002"
+    },
+    {
+      "trace_id": "3e88d627a111dc814c7524eabd84cc51",
+      "spans": [
+        {
+          "name": "order.lookup",
+          "status": {
+            "message": "HTTPException: 404: Order not found",
+            "code": "STATUS_CODE_ERROR"
+          },
+          "attributes": {
+            "order.id": "standard-1002"
+          },
+          "exceptions": [
+            {
+              "type": "fastapi.exceptions.HTTPException",
+              "message": "404: Order not found",
+              "stacktrace": "Traceback (most recent call last):\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 602, in use_span\n    yield span\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1136, in start_as_current_span\n    yield span\n  File \"/app/.venv/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 441, in start_as_current_span\n    yield span\n  File \"/app/app/main.py\", line 116, in get_order\n    raise HTTPException(404, \"Order not found\")\nfastapi.exceptions.HTTPException: 404: Order not found\n"
+            }
+          ]
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {
+            "http.status_code": "404"
+          },
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {},
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id} http send",
+          "status": {},
+          "attributes": {},
+          "exceptions": []
+        },
+        {
+          "name": "GET /api/orders/{order_id}",
+          "status": {},
+          "attributes": {
+            "http.scheme": "http",
+            "http.host": "10.215.24.7:8000",
+            "http.flavor": "1.1",
+            "http.target": "/api/orders/standard-1002",
+            "http.server_name": "localhost:8000",
+            "http.user_agent": "curl/8.21.0",
+            "http.route": "/api/orders/{order_id}",
+            "http.method": "GET",
+            "http.url": "http://localhost:8000/api/orders/standard-1002",
+            "http.status_code": "404"
+          },
+          "exceptions": []
+        }
+      ],
+      "http_target": "/api/orders/standard-1002"
+    }
+  ]
+}

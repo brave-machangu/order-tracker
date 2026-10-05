@@ -1,0 +1,51 @@
+{
+  "5xx_last_5m_by_endpoint": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "http_method": "GET",
+            "http_route": "/api/orders/{order_id}",
+            "http_status_code": "500"
+          },
+          "value": [
+            1791224862.128,
+            "0"
+          ]
+        }
+      ]
+    }
+  },
+  "requests_last_5m_by_endpoint_and_status": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "http_method": "GET",
+            "http_route": "/api/orders/{order_id}",
+            "http_status_code": "404"
+          },
+          "value": [
+            1791224862.131,
+            "1.0277634230655315"
+          ]
+        },
+        {
+          "metric": {
+            "http_method": "GET",
+            "http_route": "/api/orders/{order_id}",
+            "http_status_code": "500"
+          },
+          "value": [
+            1791224862.131,
+            "0"
+          ]
+        }
+      ]
+    }
+  }
+}

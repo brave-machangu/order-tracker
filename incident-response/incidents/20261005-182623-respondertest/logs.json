@@ -1,0 +1,30 @@
+{
+  "errors": [
+    {
+      "time": "2026-10-05T18:25:29.305484+00:00",
+      "level": "WARN",
+      "trace_id": "73455354a03b81d9e9bbf445c34ccb05",
+      "line": "order lookup not found order_id=standard-1002 status=404 trace_id=73455354a03b81d9e9bbf445c34ccb05"
+    },
+    {
+      "time": "2026-10-05T18:23:10.934127+00:00",
+      "level": "WARN",
+      "trace_id": "3e88d627a111dc814c7524eabd84cc51",
+      "line": "order lookup not found order_id=standard-1002 status=404 trace_id=3e88d627a111dc814c7524eabd84cc51"
+    }
+  ],
+  "all_recent": [
+    {
+      "time": "2026-10-05T18:25:29.305484+00:00",
+      "level": "WARN",
+      "trace_id": "73455354a03b81d9e9bbf445c34ccb05",
+      "line": "order lookup not found order_id=standard-1002 status=404 trace_id=73455354a03b81d9e9bbf445c34ccb05"
+    },
+    {
+      "time": "2026-10-05T18:23:10.934127+00:00",
+      "level": "WARN",
+      "trace_id": "3e88d627a111dc814c7524eabd84cc51",
+      "line": "order lookup not found order_id=standard-1002 status=404 trace_id=3e88d627a111dc814c7524eabd84cc51"
+    }
+  ]
+}

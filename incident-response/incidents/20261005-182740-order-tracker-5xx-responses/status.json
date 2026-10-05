@@ -1,0 +1,9 @@
+{
+  "state": "done",
+  "received_at": "2026-10-05T18:27:40.017010+00:00",
+  "agent_started_at": "2026-10-05T18:27:46.274219+00:00",
+  "agent_finished_at": "2026-10-05T18:29:26.231039+00:00",
+  "agent_exit_code": 0,
+  "agent_last_line": "STATUS: FIXED - express delivery estimate added 2 to the day-of-month instead of adding two days, raising ValueError for orders placed at month end",
+  "verified": true
+}

@@ -1,3 +1,7 @@
+import os
+
+os.environ.setdefault("TELEMETRY_EXPORTER", "none")
+
 import pytest
 from fastapi.testclient import TestClient
 
@@ -33,3 +37,24 @@ def test_create_and_update_order(client):
 
 def test_missing_order(client):
     assert client.get("/api/orders/missing").status_code == 404
+
+
+def test_express_order_placed_at_month_end(client):
+    response = client.get("/api/orders/express-1002")
+    assert response.status_code == 200
+    assert response.json()["priority"] == "express"
+    assert "estimated_delivery" in response.json()
+
+
+@pytest.mark.parametrize(
+    "created_at, expected",
+    [
+        ("2026-09-30T18:20:03+00:00", "2026-10-02"),
+        ("2026-12-31T23:59:59+00:00", "2027-01-02"),
+        ("2028-02-28T12:00:00+00:00", "2028-03-01"),
+        ("2026-10-05T08:00:00+00:00", "2026-10-07"),
+    ],
+)
+def test_express_estimated_delivery_rolls_over_month(created_at, expected):
+    order = main.order_detail({"priority": "express", "created_at": created_at})
+    assert order["estimated_delivery"] == expected

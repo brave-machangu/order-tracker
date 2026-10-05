@@ -1,0 +1,13 @@
+# Question 6: send alerts to the incident responder (runs on the host, port 8001).
+apiVersion: 1
+
+contactPoints:
+  - orgId: 1
+    name: incident-responder
+    receivers:
+      - uid: incident-responder-webhook
+        type: webhook
+        settings:
+          url: http://host.docker.internal:8001/alerts
+          httpMethod: POST
+        disableResolveMessage: false

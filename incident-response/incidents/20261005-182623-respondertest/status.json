@@ -1,0 +1,8 @@
+{
+  "state": "done",
+  "received_at": "2026-10-05T18:26:23.928786+00:00",
+  "agent_started_at": "2026-10-05T18:26:30.991567+00:00",
+  "agent_finished_at": "2026-10-05T18:27:00.202414+00:00",
+  "agent_exit_code": 0,
+  "agent_last_line": "STATUS: TEST_ALERT_ACKNOWLEDGED - no incident to fix"
+}
